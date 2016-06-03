@@ -1,2 +1,19 @@
+Bundle-Classpath:\
+	.,\
+	lib/neo4j-java-driver.jar
 Bundle-SymbolicName: neo4j.sample.portlet
 Bundle-Version: 1.0.0.${tstamp}
+DynamicImport-Package: javax.net.*
+Import-Package:\
+	!org.neo4j.*,\
+	\
+	com.liferay.portal.kernel.log;version='[6, 7]',\
+	com.liferay.portal.kernel.service;version='[0.0, 9)',\
+	com.liferay.portal.kernel.theme;version='[0.0, 9)',\
+	\
+	javax.portlet;version='[2.0,3)',\
+	\
+	javax.servlet;version='[2.5,4)',\
+	*
+Private-Package: com.liferay.neo4j.sample.portlet
+-includeresource: lib/neo4j-java-driver.jar=neo4j-java-driver-1.0.0.jar
