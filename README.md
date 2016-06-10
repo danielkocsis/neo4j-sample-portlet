@@ -21,6 +21,25 @@ Once you successfully installed and configure Blade you can deploy the portlet w
 
   - The very fist version of the portlet. It supports only basic Cypher queries with plain text response display.
   - It uses embedded Neo4j JAVA language driver, since there is no available OSGi version yet
+ 
+- #### 1.1
+
+  - Liferay [neo4j-osgi-driver](http://repo1.maven.org/maven2/com/liferay/neo4j/neo4j-osgi-driver/1.0.0/) just released! The portlet now uses this dependency instead of embedding the driver.
+  - Since the wrapper is open source and publicly available, please feel free to use it in your project as well: 
+
+    Gradle: 
+    
+    ```
+     compile 'com.liferay.neo4j:neo4j-osgi-driver:1.0.0'
+    ```
+    
+    Maven: 
+    
+    ```
+    <groupId>com.liferay.neo4j</groupId>
+    <artifactId>neo4j-osgi-driver</artifactId>
+    <version>1.0.0</version>
+    ```
 
 
 ## Future plans
