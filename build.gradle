@@ -1,11 +1,9 @@
 dependencies {
+	compile 'com.liferay.neo4j:neo4j-osgi-driver:1.0.0'
 	compile 'com.liferay.portal:portal-service:7.0.0-SNAPSHOT'
 	compile 'com.liferay.portal:util-taglib:7.0.0-SNAPSHOT'
 	compile 'javax.portlet:portlet-api:2.0'
 	compile 'javax.servlet:servlet-api:2.5'
 	compile 'jstl:jstl:1.2'
-	compile 'org.neo4j.driver:neo4j-java-driver:1.0.0'
 	compile 'org.osgi:org.osgi.compendium:5.0.0'
 }
-
-version = '1.0.0'
